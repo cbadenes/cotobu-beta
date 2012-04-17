@@ -5,8 +5,6 @@ gem 'rails', '3.2.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
 # linux javascript
 gem 'execjs'
 gem 'therubyracer'
@@ -21,6 +19,14 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :production do
+	gem 'pg'
+end
+
+group :test do
+	gem 'sqlite3'
 end
 
 gem 'jquery-rails'
