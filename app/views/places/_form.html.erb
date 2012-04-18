@@ -1,0 +1,11 @@
+<%= semantic_form_for(@place) do |f| %>
+  <%= f.semantic_errors %>
+  <%= f.inputs do %>
+    <%= f.input :name,   :hint => "Enter the place's name" %>
+    <%= f.input :description, :hint => "Enter a brief description for this place" %>
+  <% end %>
+
+  <%= f.buttons do %>
+    <%= f.commit_button :button_html => {:class => "primary"} %>
+  <% end %>
+<% end %>
