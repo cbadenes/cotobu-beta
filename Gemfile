@@ -10,6 +10,8 @@ gem 'rails', '3.2.0'
 gem 'formtastic'
 gem 'formtastic-bootstrap'
 
+# tab navigation
+gem 'tabulous'
 
 # linux javascript
 gem 'execjs'
