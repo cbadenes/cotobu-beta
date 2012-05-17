@@ -1,0 +1,19 @@
+<div class="row">
+		<div class="span8 offset4">	
+			<h2>Sign Up</h2>
+
+			<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+			  	<div><%= f.email_field :email , :placeholder => 'email..' %></div>
+			  	<div><%= f.password_field :password, :placeholder => 'password..' %></div>
+				<div><%= f.password_field :password_confirmation, :placeholder => 'confirm password..' %></div>
+			  
+
+			  	<div><%= f.submit "Sign Up", :button_html => {:class => "primary"} %></div>
+
+			<% end %>
+
+
+			<%= render "links" %>
+
+		</div>
+</div><!-- row -->

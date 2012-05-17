@@ -6,16 +6,9 @@ gem 'rails', '3.2.0'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-# form fantastic nad bootstrap
-gem 'formtastic'
-gem 'formtastic-bootstrap'
 
 # tab navigation
 gem 'tabulous'
-
-# linux javascript
-gem 'execjs'
-gem 'therubyracer'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,10 +18,16 @@ group :assets do
 
   # twitter bootstrap
   gem 'bootstrap-sass'
-  
-  
+
+  # form fantastic nad bootstrap
+  gem 'formtastic'
+  gem 'formtastic-bootstrap'
+
+  # linux javascript
+  gem 'execjs'
+
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
+  gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -42,6 +41,8 @@ group :development do
 end
 
 gem 'jquery-rails'
+
+gem 'devise'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

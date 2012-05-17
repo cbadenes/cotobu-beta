@@ -1,5 +1,7 @@
 CotobuBeta::Application.routes.draw do
   
+  devise_for :admins
+
   resources :places
 
   # The priority is based upon order of creation:
