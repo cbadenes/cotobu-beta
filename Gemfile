@@ -20,8 +20,8 @@ group :assets do
   gem 'bootstrap-sass'
 
   # form fantastic nad bootstrap
-  gem 'formtastic'
-  gem 'formtastic-bootstrap'
+  #gem 'formtastic'
+  #gem 'formtastic-bootstrap'
 
   # linux javascript
   gem 'execjs'
