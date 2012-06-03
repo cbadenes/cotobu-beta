@@ -18,7 +18,7 @@
           <span class="icon-bar"></span> 
           <span class="icon-bar"></span> 
         </a> 
-        <a class="brand" href="/">Cotobu</a> 
+        <a class="brand" href="/"><%= image_tag("cotobu_ico.png", :alt => "Africa") %>  Cotobu</a> 
         <div class="nav-collapse"> 
           <ul class="nav"> 
             <li><a href="/">Home</a></li> 
@@ -41,8 +41,9 @@
             <li class="divider-vertical"></li> 
             <li>  
             <% if admin_signed_in? %>  
-              <li><div class="label"><%= current_admin.email %></div></li>
+              # cancel_user_registration_path
               <li><%= link_to "Sign out", destroy_admin_session_path, :method => :delete %></li>
+              <li><div class="label"><%= current_admin.email %></div></li>
             <% else %>  
               <li><%= link_to "Sign in", new_admin_session_path %>  </li>
             <% end %> 

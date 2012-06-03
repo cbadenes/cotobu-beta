@@ -19,9 +19,8 @@ group :assets do
   # twitter bootstrap
   gem 'bootstrap-sass'
 
-  # form fantastic nad bootstrap
-  #gem 'formtastic'
-  #gem 'formtastic-bootstrap'
+  # omniauth
+  gem "omniauth-facebook"
 
   # linux javascript
   gem 'execjs'
